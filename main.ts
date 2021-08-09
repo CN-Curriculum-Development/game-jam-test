@@ -27,6 +27,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 let mySprite2: Sprite = null
 let mySprite3: Sprite = null
 let berries = 0
+info.setScore(0)
 scene.setBackgroundImage(img`
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
@@ -188,7 +189,6 @@ let basket = sprites.create(img`
     `, SpriteKind.basket)
 berries = 0
 basket.setPosition(20, 27)
-info.setScore(0)
 game.onUpdateInterval(1000, function () {
     if (Math.percentChance(60)) {
         mySprite2 = sprites.create(img`
