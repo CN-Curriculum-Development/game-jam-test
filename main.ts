@@ -188,7 +188,7 @@ let basket = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.basket)
 berries = 0
-basket.setPosition(20, 27)
+basket.setPosition(73, 27)
 game.onUpdateInterval(1000, function () {
     if (Math.percentChance(60)) {
         mySprite2 = sprites.create(img`
