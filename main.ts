@@ -11,7 +11,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.basket, function (sprite, otherS
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     otherSprite.destroy()
-    berries += 1
+    berries += 2
     mySprite3 = sprites.create(img`
         . . 9 9 9 9 9 9 
         . . 9 7 7 9 9 9 
